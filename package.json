@@ -1,0 +1,32 @@
+{
+  "name": "soumns-vue2-pc-template",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vue": "2",
+    "vue-router": "3",
+    "vuex": "3",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "unocss": "^0.41.1",
+    "vite": "^2.9.9",
+    "vite-plugin-eslint": "^1.6.1",
+    "vite-plugin-vue2": "^2.0.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
