@@ -10,7 +10,13 @@ module.exports = {
   },
   plugins: ['vue'],
   rules: {
+    indent: ['off', 2],
+    'no-unused-expressions': 0, //禁止无用的表达式
+    'no-sequences': 0,
     'space-before-function-paren': 0,
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'vue/multi-word-component-names': 'off',
     'vue/max-attributes-per-line': [
       'error',
       {
