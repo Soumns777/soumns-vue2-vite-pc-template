@@ -1,7 +1,7 @@
 <template>
   <!-- bg-[url('/src/assets/uploads/login_bg.svg')] -->
   <div style="background-image: url('/uploads/login_bg.svg')" bg="center cover no-repeat" min-w-100vw min-h-100vh>
-    <div w="40px" h="40px" bg="red-300" @click="init()">88</div>
+    <div class="container" w="40px" h="40px" bg="red-300" @click="init()">88</div>
   </div>
 </template>
 
