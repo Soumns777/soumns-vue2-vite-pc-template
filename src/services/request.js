@@ -20,6 +20,10 @@ export const getLogin = (params) => {
   return soumnsHttp.get('/api/login', params)
 }
 
+export const getRoutes = (params) => {
+  return soumnsHttp.post('/user-router-menu', params)
+}
+
 /**
  * @method postMock
  * @param 无

@@ -9,8 +9,9 @@
 </template>
 
 <script>
-import { getLogin } from '../../services/request'
+import { getRoutes } from '../../services/request'
 import { GET_USER_MSG } from '../../store/modules/user/constant'
+import { formatTree } from '@/libs/utools'
 import loginBg from '@/assets/uploads/login_bg.svg'
 import mobileBg from '@/assets/uploads/mobile.png'
 export default {
@@ -29,11 +30,11 @@ export default {
   },
   methods: {
     async init() {
-      const res = await getLogin({
-        userName: 'iu',
-        password: '123'
-      })
-      console.log(res, '💙💛 初始化登录')
+      const { data: res } = await getRoutes()
+      // console.log(res, '💙💛 初始化路由列表')
+
+      const res1 = formatTree(res)
+      console.log(res1, '💙💛 generateRoute')
     }
   }
 }

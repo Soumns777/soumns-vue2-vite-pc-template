@@ -41,7 +41,7 @@ app.get('/api/login', (req, res) => {
   })
 })
 
-app.get('/user-router-menu', (req, res) => {
+app.post('/user-router-menu', (req, res) => {
   console.log(req.body, '--> 初始化路由列表')
   res.send({
     status: 200,
@@ -88,6 +88,6 @@ app.get('/user-router-menu', (req, res) => {
 })
 
 // 启动服务器
-app.listen(3001, () => {
-  console.log('💙💛 服务在3001端口启动')
+app.listen(3002, () => {
+  console.log('💙💛 服务在3002端口启动')
 })

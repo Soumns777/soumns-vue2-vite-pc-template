@@ -26,6 +26,7 @@ module.exports = {
     ],
     'no-sequences': 0,
     'space-before-function-paren': 0,
+    'array-callback-return': 0,
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/multi-word-component-names': 'off',
