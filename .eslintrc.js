@@ -12,6 +12,18 @@ module.exports = {
   rules: {
     indent: ['off', 2],
     'no-unused-expressions': 0, //禁止无用的表达式
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always'
+        },
+        svg: 'always',
+        math: 'always'
+      }
+    ],
     'no-sequences': 0,
     'space-before-function-paren': 0,
     'vue/singleline-html-element-content-newline': 'off',
@@ -21,7 +33,7 @@ module.exports = {
       'error',
       {
         singleline: {
-          max: 5
+          max: 10
         },
         multiline: {
           max: 1

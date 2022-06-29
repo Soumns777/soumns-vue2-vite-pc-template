@@ -5,9 +5,8 @@ import Unocss from 'unocss/vite'
 import { presetUno, presetAttributify, presetIcons } from 'unocss'
 import eslint from 'vite-plugin-eslint'
 
-function resolve(dir) {
-  return path.join(__dirname, dir)
-}
+const pathSrc = path.resolve(__dirname, 'src')
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
@@ -50,15 +49,23 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve('src'),
-      '/uploads': '/src/assets/uploads'
+      '@': pathSrc
     }
   },
   plugins: [
     createVuePlugin(),
     eslint(),
     Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons()]
+      presets: [
+        presetUno(),
+        presetAttributify(),
+        presetIcons({
+          extraProperties: {
+            display: 'inline-block',
+            'vertical-align': 'middle'
+          }
+        })
+      ]
     })
   ]
 })

@@ -6,7 +6,6 @@ import 'uno.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-
 // import Vconsole from 'vconsole'
 // const vConsole = new Vconsole()
 // Vue.use(vConsole)

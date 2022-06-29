@@ -6,8 +6,8 @@
     "dev": "vite --mode development",
     "dev:test": "vite --mode test",
     "dev:prod": "vite --mode production",
-    "build:test": "vite build --mode test",
-    "build:prod": "vite build --mode production",
+    "test": "vite build --mode test",
+    "build": "vite build --mode production",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -24,6 +24,7 @@
     "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
+    "@iconify-json/ep": "^1.1.6",
     "eslint": "^8.18.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^6.2.0",

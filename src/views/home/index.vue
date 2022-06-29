@@ -1,17 +1,25 @@
 <template>
-  <!-- bg-[url('/src/assets/uploads/login_bg.svg')] -->
-  <div style="background-image: url('/uploads/login_bg.svg')" bg="center cover no-repeat" min-w-100vw min-h-100vh>
-    <div class="container" w="40px" h="40px" bg="red-300" @click="init()">88</div>
+  <div :style="{ backgroundImage: 'url(' + mobileBg + ')' }" bg="center cover no-repeat" min-w-100vw min-h-100vh>
+    <div w="100px" h="100px" bg="red-300" color="#fff" @click="init()">88</div>
+
+    <img src="@/assets/uploads/form_icon.png" alt="" />
+
+    <i class="i-ep-drizzling" text-30px color="red" absolute left-200px top-300px />
   </div>
 </template>
 
 <script>
 import { getLogin } from '../../services/request'
 import { GET_USER_MSG } from '../../store/modules/user/constant'
+import loginBg from '@/assets/uploads/login_bg.svg'
+import mobileBg from '@/assets/uploads/mobile.png'
 export default {
   name: 'Home',
   data() {
-    return {}
+    return {
+      loginBg,
+      mobileBg
+    }
   },
 
   mounted() {

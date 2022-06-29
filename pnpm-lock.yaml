@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/ep': ^1.1.6
   axios: ^0.27.2
   cors: ^2.8.5
   element-ui: ^2.15.9
@@ -39,6 +40,7 @@ dependencies:
   vuex-persistedstate: 4.1.0_vuex@3.6.2
 
 devDependencies:
+  '@iconify-json/ep': 1.1.6
   eslint: 8.18.0
   eslint-config-standard: 17.0.0_73zqogbxxwb3ijehtqwxiag47y
   eslint-plugin-html: 6.2.0
@@ -561,6 +563,12 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/ep/1.1.6:
+    resolution: {integrity: sha512-EJNIHVsBOOfH6cuRqzPJT+zTnLPcLQGu3/WIENEXpWQ0wwIkaSWAewmPjS1ksvu4rf1lLJEgMimuivIrGSONKA==}
+    dependencies:
+      '@iconify/types': 1.1.0
     dev: true
 
   /@iconify/types/1.1.0:
