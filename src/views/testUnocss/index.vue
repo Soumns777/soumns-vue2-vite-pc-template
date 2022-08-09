@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div w-screen h-screen soumns-bg class="bg-[url(@/assets/uploads/bg.png)]"></div>
+    <div w-screen h-screen soumns-bg class="bg-[url(./src/assets/uploads/bg.png)]"></div>
   </div>
 </template>
 

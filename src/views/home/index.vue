@@ -4,7 +4,7 @@
 
     <img src="@/assets/uploads/form_icon.png" alt="" />
 
-    <i class="i-ep-drizzling" text-30px color="red" absolute left-200px top-300px />
+    <i class="i-ep-drizzling" text-30px color="red" absolute left-200px top-300px></i>
   </div>
 </template>
 
