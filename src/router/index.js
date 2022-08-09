@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     redirect: {
-      name: 'element'
+      name: 'testUnocss'
     }
   },
   {
@@ -21,9 +21,6 @@ const routes = [
     path: '/element',
     name: 'element',
     component: () => import('@/views/element/index.vue'),
-    // meta: {
-    //   title: 'element'
-    // },
     redirect: {
       name: 'home1'
     },
@@ -58,6 +55,12 @@ const routes = [
         ]
       }
     ]
+  },
+
+  {
+    path: '/testUnocss',
+    name: 'testUnocss',
+    component: () => import('@/views/testUnocss/index.vue')
   }
 ]
 
