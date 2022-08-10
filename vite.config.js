@@ -54,18 +54,7 @@ export default defineConfig({
   },
   plugins: [
     createVuePlugin(),
-    eslint(),
-    Unocss({
-      presets: [
-        presetUno(),
-        presetAttributify(),
-        presetIcons({
-          extraProperties: {
-            display: 'inline-block',
-            'vertical-align': 'middle'
-          }
-        })
-      ]
-    })
+    // eslint(),
+    Unocss()
   ]
 })

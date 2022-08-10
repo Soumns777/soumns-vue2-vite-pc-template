@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <div w-screen h-screen soumns-bg class="bg-[url(./src/assets/uploads/bg.png)]"></div>
+    <!-- class="bg-[url(./src/assets/uploads/bg.png)]" -->
+    <div soumns-min soumns-bg-bg-png text-zgh>777</div>
   </div>
 </template>
 

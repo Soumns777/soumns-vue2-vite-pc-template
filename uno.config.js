@@ -3,30 +3,23 @@ import { defineConfig, presetAttributify, presetIcons, presetTypography, presetU
 export default defineConfig({
   theme: {
     colors: {
-      nice: 'skyblue'
+      dfl: '#80D1C8', // 蒂芙尼蓝
+      kly: '#002EA6', // 克莱因蓝
+      npl: '#FFE78F', // 拿坡里黄
+      zgh: '#D7000F', // 中国红
+      ams: '#FF770F' // 爱马仕橙
     }
   },
   rules: [
     // 在这个可以增加预设规则, 也可以使用正则表达式
     [
-      'soumns-center', // 使用时只需要写 p-c 即可应用该组样式
+      'soumns-center',
       {
         position: 'absolute',
         top: '50%',
         left: '50%',
-        transform: `translate(-50%, -50%)`
-      }
-    ],
-    [
-      'soumns-dfl',
-      {
-        'background-color': '#80D1c8'
-      }
-    ],
-    [
-      'soumns-kly',
-      {
-        color: '#002EA6'
+        transform: `translate(-50%, -50%)`,
+        'box-sizing': 'border-box'
       }
     ],
     [
@@ -34,7 +27,8 @@ export default defineConfig({
       {
         display: 'flex',
         'align-items': 'center',
-        'justify-content': 'center'
+        'justify-content': 'center',
+        'box-sizing': 'border-box'
       }
     ],
     [
@@ -42,6 +36,28 @@ export default defineConfig({
       {
         'background-repeat': 'no-repeat',
         'background-size': '100% 100%'
+      }
+    ],
+    [
+      'soumns-min',
+      {
+        'min-width': '100vw',
+        'min-height': '100vh',
+        'box-sizing': 'border-box'
+      }
+    ],
+    // 动态背景
+    [
+      /^soumns-bg-(.*)$/,
+      ([_, d]) => {
+        let img = d.split('-')[0]
+        let type = d.split('-')[1]
+        return {
+          background: `url(./src/assets/uploads/${img}.${type})`,
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat',
+          'box-sizing': 'border-box'
+        }
       }
     ]
   ],
