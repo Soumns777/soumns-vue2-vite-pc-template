@@ -53,7 +53,7 @@ export default defineConfig({
         let img = d.split('-')[0]
         let type = d.split('-')[1]
         return {
-          background: `url(./src/assets/uploads/${img}.${type})`,
+          background: `url('./src/assets/uploads/${img}.${type}')`,
           'background-size': '100% 100%',
           'background-repeat': 'no-repeat',
           'box-sizing': 'border-box'
