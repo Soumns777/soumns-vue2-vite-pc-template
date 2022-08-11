@@ -1,5 +1,7 @@
 import { defineConfig, presetAttributify, presetIcons, presetTypography, presetUno, presetWebFonts, transformerDirectives, transformerVariantGroup } from 'unocss'
 
+import path from 'path'
+
 export default defineConfig({
   theme: {
     colors: {
@@ -52,8 +54,9 @@ export default defineConfig({
       ([_, d]) => {
         let img = d.split('-')[0]
         let type = d.split('-')[1]
+        let Url = path.resolve(__dirname, './src/assets/uploads')
         return {
-          background: `url('./src/assets/uploads/${img}.${type}')`,
+          background: `url('.${Url}/${img}.${type}')`,
           'background-size': '100% 100%',
           'background-repeat': 'no-repeat',
           'box-sizing': 'border-box'
