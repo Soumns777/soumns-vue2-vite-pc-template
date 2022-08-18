@@ -4,6 +4,7 @@ import path from 'path'
 import Unocss from 'unocss/vite'
 import { presetUno, presetAttributify, presetIcons } from 'unocss'
 import eslint from 'vite-plugin-eslint'
+import babel from 'vite-babel-plugin'
 
 const pathSrc = path.resolve(__dirname, 'src')
 
@@ -55,6 +56,7 @@ export default defineConfig({
   plugins: [
     createVuePlugin(),
     // eslint(),
-    Unocss()
+    Unocss(),
+    babel()
   ]
 })
