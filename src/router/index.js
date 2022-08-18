@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     redirect: {
-      name: 'testUnocss'
+      name: 'testVantAutoImport'
     }
   },
   {
@@ -61,6 +61,12 @@ const routes = [
     path: '/testUnocss',
     name: 'testUnocss',
     component: () => import('@/views/testUnocss/index.vue')
+  },
+
+  {
+    path: '/testVantAutoImport',
+    name: 'testVantAutoImport',
+    component: () => import('@/views/testVantAutoImport/index.vue')
   }
 ]
 
